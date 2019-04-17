@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "263817751184",
+    "firebase_url": "https://sabuba-1468d.firebaseio.com",
+    "project_id": "sabuba-1468d",
+    "storage_bucket": "sabuba-1468d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263817751184:android:a889083277e38178",
+        "android_client_info": {
+          "package_name": "id.trydev.sabuba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263817751184-clovrr19na374f2h5n4c1fdhhclm0r3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq3u0inGA_yQLVXWUfjG-ewOg3mlOrEk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263817751184-clovrr19na374f2h5n4c1fdhhclm0r3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

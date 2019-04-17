@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sabuba</string>
+    <string name="daftar_disini">
+        <u>Daftar disini</u>
+    </string>
+    <string name="masuk_disini">
+        <u>Masuk disini</u>
+    </string>
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>
