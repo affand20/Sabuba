@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFEEDE</color>
-    <color name="colorPrimaryDark">#F8DAC4</color>
+    <color name="colorPrimary">#8FA2FF</color>
+    <color name="colorPrimaryDark">#8FA2FF</color>
+    <color name="bg_login">#FFEEDE</color>
+    <color name="purple">#8FA2FF</color>
     <color name="colorAccent">#92070D</color>
     <color name="colorAccentLight">#EC3D22</color>
     <color name="bg_regist">#E7F5DF</color>
     <color name="colorAccentYellow">#FFC107</color>
+    <color name="grey">#F5F6F8</color>
 
 </resources>

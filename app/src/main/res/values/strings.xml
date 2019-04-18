@@ -10,4 +10,595 @@
         <item>Laki-laki</item>
         <item>Perempuan</item>
     </string-array>
+    <string-array name="kuesioner_umur_balita">
+        <item>3 Bulan</item>
+        <item>6 Bulan</item>
+        <item>9 Bulan</item>
+        <item>12 Bulan</item>
+        <item>15 Bulan</item>
+        <item>18 Bulan</item>
+        <item>21 Bulan</item>
+        <item>24 Bulan</item>
+        <item>30 Bulan</item>
+        <item>36 Bulan</item>
+        <item>42 Bulan</item>
+        <item>48 Bulan</item>
+        <item>54 Bulan</item>
+        <item>60 Bulan</item>
+        <item>66 Bulan</item>
+        <item>72 Bulan</item>
+    </string-array>
+
+    <string-array name="kuesioner_3_bulan">
+        <item>Pada waktu bayi telentang, apakah masing-masing lengan dan tungkai bergerak dengan
+            mudah? Jawab TIDAK bila salah satu atau kedua tungkai atau lengan bayi bergerak tak
+            terarah/tak terkendali
+        </item>
+        <item>Pada waktu bayi telentang apakah ia melihat dan menatap wajah anda?</item>
+        <item>Apakah bayi dapat mengeluarkan suara-suara lain (ngoceh), disamping menangis?</item>
+        <item>Pada waktu bayi telentang, apakah ia dapat mengikuti gerakan anda dengan
+            menggerakkan kepalanya dari kanan/kiri ke tengah?
+        </item>
+        <item>Pada waktu bayi telentang, apakah. ia dapat mengikuti gerakan anda dengan
+            menggerakkan kepalanya dari satu sisi hampir sampai pada sisi yang lain?
+        </item>
+        <item>Pada waktu anda mengajak bayi berbicara dan tersenyum,apakah ia tersenyum kembali
+            kepada anda?
+        </item>
+        <item>Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya</item>
+        <item>Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya sehingga membentuk
+            sudut 45° ?
+        </item>
+        <item>Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya dengan tegak ?</item>
+        <item>Apakah bayi suka tertawa keras walau tidak digelitik atau diraba-raba?</item>
+    </string-array>
+    <string-array name="kuesioner_6_bulan">
+        <item>Pada waktu bayi telentang, apakah ia dapat mengikuti gerakan anda dengan
+            menggerakkan kepala sepenuhnya dari satu sisi ke sisi yang lain?
+        </item>
+        <item>Dapatkah bayi mempertahankan posisi kepala dalam keadaan tegak clan stabil? Jawab
+            <u>TIDAK</u>
+            bila kepala bayi cenderung jatuh ke kanan/kiri atau ke dadanya
+        </item>
+        <item>Sentuhkan pensil di punggung tangan atau ujung jari bayi. <u>(jangan meletakkan di atas
+            telapak tangan bayi)</u>. Apakah bayi dapat menggenggam pensil itu selama beberapa
+            detik?
+        </item>
+        <item>Ketika bayi telungkup di alas datar, apakah ia dapat mengangkat dada dengan kedua
+            lengannya sebagai penyangga?
+        </item>
+        <item>Pernahkah bayi mengeluarkan suara gembira bernada tinggi atau memekik tetapi bukan
+            menangis?
+        </item>
+        <item>Pernahkah bayi berbalik paling sedikit dua kali, dari telentang ke telungkup atau
+            sebaliknya?
+        </item>
+        <item>Pernahkah anda melihat bayi tersenyurn ketika melihat mainan yang lucu, gambar atau
+            binatang peliharaan pada saat ia bermain sendiri?
+        </item>
+        <item>Dapatkah bayi mengarahkan matanya pada benda kecil sebesar kacang, kismis atau
+            uang logam? Jawab <u>TIDAK</u> jika ia tidak dapat mengarahkan matanya
+        </item>
+        <item>Dapatkah bayi meraih mainan yang diletakkan agak jauh namun masih berada dalam
+            jangkauan tangannya?
+        </item>
+        <item>Pada posisi bayi telentang, pegang kedua tangannya lalu tarik perlahan-lahan ke posisi
+            clucluk. Dapatkah bayi mempertahankan lehernya secara kaku? Jawab <u>TIDAK</u> bila kepala
+            bayi jatuh kembali
+        </item>
+    </string-array>
+    <string-array name="kuesioner_9_bulan">
+        <item>Pada posisi bayi telentang, pegang kedua tangannya lalu tarik perlahan-lahan ke posisi
+            clucluk. Dapatkah bayi mempertahankan lehernya secara kaku? Jawab <u>TIDAK</u> bila kepala bayi jatuh
+            kembali.
+        </item>
+        <item>Pernahkah anda melihat bayi memindahkan mainan atau kue kering dari satu tangan ke
+            tangan yang lain? Benda-benda panjang seperti sendok atau kerincingan bertangkai
+            tidak ikut dinilai.
+        </item>
+        <item>Tarik perhatian bayi dengan memperlihatkan selendang, sapu tangan atau serbet,
+            kemudian jatuhkan ke lantai. Apakah bayi mencoba mencarinya? Misalnya mencari di
+            bawah meja atau di belakang kursi?
+        </item>
+        <item>Apakah bayi dapat memungut dua benda seperti mainan/kue kering, dan masingmasing tangan memegang satu
+            benda pada saat yang sama?
+            Jawab <u>TIDAK</u> bila bayi tidak pernah melakukan perbuatan ini.
+        </item>
+        <item>Jika anda mengangkat bayi melalui ketiaknya ke posisi berdiri, dapatkah ia menyangga
+            sebagian berat badan dengan kedua kakinya? Jawab <u>YA</u> bila ia mencoba berdiri dan
+            sebagian berat badan tertumpu pada kedua kakinya.
+        </item>
+        <item>Dapatkah bayi memungut dengan tangannya benda-benda kecil seperti kismis,
+            kacang-kacangan, potongan biskuit, dengan gerakan miring atau menggerapai?
+        </item>
+        <item>Tanpa disangga oleh bantal, kursi atau dinding, dapatkah bayi duduk sendiri selama 60
+            detik?
+        </item>
+        <item>Apakah bayi dapat makan kue kering sendiri?</item>
+        <item>Pada waktu bayi bermain sendiri dan anda diam-diam datang berdiri di belakangnya,
+            apakah ia menengok ke belakang seperti mendengar kedatangan anda? Suara keras
+            tidak ikut dihitung. Jawab <u>YA</u> hanya jika anda melihat reaksinya terhadap suara yang
+            perlahan atau bisikan.
+        </item>
+        <item>Letakkan suatu mainan yang dinginkannya di luar jangkauan bayi, apakah ia mencoba
+            mendapatkannya dengan mengulurkan lengan atau badanny
+        </item>
+    </string-array>
+    <string-array name="kuesioner_12_bulan">
+        <item>Jika anda bersembunyi di belakang sesuatu/di pojok, kemudian muncui dan menghilang
+            secara berulang-ulang di hadapan anak, apakah ia mencari anda atau mengharapkan
+            anda muncul kembali?
+        </item>
+        <item>Letakkan pensil di telapak tangan bayi. Coba ambil pensil tersebut dengan perlahanlahan. Sulitkah anda
+            mendapatkan pensil itu kembali?
+        </item>
+        <item>Apakah anak dapat berdiri selama 30 detik atau lebih dengan berpegangan pada
+            kursi/meja?
+        </item>
+        <item>Apakah anak dapat mengatakan 2 suku kata yang sama, misalnya: “ma-ma”, “da-da”
+            atau “pa-pa”. Jawab <u>YA</u> bila ia mengeluarkan salah—satu suara tadi.
+        </item>
+        <item>Apakah anak dapat mengangkat badannya ke posisi berdiri tanpa bantuan anda?</item>
+        <item>Apakah anak dapat membedakan anda dengan orang yang belum ia kenal? la akan
+            menunjukkan sikap malu-malu atau ragu-ragu pada saat permulaan bertemu dengan
+            orang yang belum dikenalnya
+        </item>
+        <item>Apakah anak dapat mengambil Benda kecil seperti kacang atau kismis, dengan meremas
+            di antara ibu jari dan jarinya?
+        </item>
+        <item>Apakah anak dapat duduk sendiri tanpa bantuan?</item>
+        <item>Sebut 2-3 kata yang dapat ditiru oleh anak (tidak perlu kata-kata yang lengkap). Apakah
+            ia mencoba meniru menyebutkan kata-kata tadi ?
+        </item>
+        <item>Tanpa bantuan, apakah anak dapat mempertemukan dua kubus kecil yang ia pegang?
+            Kerincingan bertangkai dan tutup panel tidak ikut dinilai.
+        </item>
+    </string-array>
+    <string-array name="kuesioner_15_bulan">
+        <item>Tanpa bantuan, apakah anak dapat mempertemukan dua kubus kecil yang ia pegang?
+            Kerincingan bertangkai dan tutup, panci tidak ikut dinilai
+        </item>
+        <item>Apakah anak dapat jalan sendiri atau jalan dengan berpegangan?</item>
+        <item>Tanpa bantuan, apakah anak dapat bertepuk tangan atau melambai-lambai? Jawab
+            <u>TIDAK</u>
+            bila ia membutuh kemandirian kaq bantuan.
+        </item>
+        <item>Apakah anak dapat mengatakan “papa” ketika ia memanggil/melihat ayahnya, atau
+            mengatakan “mama” jika memanggil/melihat ibunya? Jawab <u>YA</u> bila anak mengatakan
+            salah satu diantaranya.
+        </item>
+        <item>Dapatkah anak berdiri sendiri tanpa berpegangan selama kira-kira 5 detik?</item>
+        <item>Dapatkan anak berdiri sendiri tanpa berpegangan selama 30 detik atau lebih?
+            Tanpa berpegangan atau menyentuh lantai, apakah anak dapat membungkuk untuk
+            memungut mainan di lantai dan kemudian berdiri kembali?
+        </item>
+        <item>Apakah anak dapat menunjukkan apa yang diinginkannya tanpa menangis atau
+            merengek? Jawab <u>YA</u> bila ia menunjuk, menarik atau mengeluarkan suara yang
+            menyenangkan
+        </item>
+        <item>Apakah anak dapat berjalan di sepanjang ruangan tanpa jatuh atau terhuyung-huyung?</item>
+        <item>Apakah anak dapat mengambil benda kecil seperti kacang, kismis, atau potongan biskuit
+            dengan menggunakan ibu jari dan telunjuk?
+        </item>
+    </string-array>
+    <string-array name="kuesioner_18_bulan">
+        <item>Tanpa bantuan, apakah anak dapat bertepuk tangan atau melambai-lambai? Jawab
+            <u>TIDAK</u>
+            bila ia membutuhkan bantuan.
+        </item>
+        <item>Apakah anak dapat mengatakan “papa” ketika ia memanggil/melihat ayahnya, atau
+            mengatakan “mama” jika memanggil/melihat ibunya?
+        </item>
+        <item>Apakah anak dapat berdiri sendiri tanpa berpegangan selama kira-kira 5 detik?</item>
+        <item>Apakah anak dapat berdiri sendiri tanpa berpegangan selama 30 detik atau lebih?</item>
+        <item>Tanpa berpegangan atau menyentuh lantai, apakah anak dapat membungkuk untuk
+            memungut mainan di lantai clan kemudian berdiri kembali?
+        </item>
+        <item>Apakah anak dapat menunjukkan apa yang diinginkannya tanpa menangis atau
+            merengek? Jawab <u>YA</u> bila ia menunjuk, menarik atau mengeluarkan suara yang
+            menyenangkan.
+        </item>
+        <item>Apakah anak dapat berjalan di sepanjang ruangan tanpa jatuh atau terhuyung-huyung?</item>
+        <item>Apakah anak anak dapat mengambil benda kecil seperti kacang, kismis, atau potongan
+            biskuit dengan menggunakan ibu jari dan jari telunjuk?
+        </item>
+        <item>Jika anda menggelindingkan bola ke anak, apakah ia menggelindingkan/melemparkan
+            kembali bola pada anda?
+        </item>
+        <item>Apakah anak dapat memegang sendiri cangkir/gelas dan minum dari tempat tersebut
+            tanpa tumpah?
+        </item>
+    </string-array>
+    <string-array name="kuesioner_21_bulan">
+        <item>Tanpa berpegangan atau menyentuh lantai, apakah anak dapat membungkuk untuk
+            memungut mainan di lantai dan kemudian berdiri kembali?
+        </item>
+        <item>Apakah anak dapat menunjukkan apa yang diinginkannya tanpa menangis atau
+            merengek? Jawab <u>YA</u> bila ia menunjuk, menarik atau mengeluarkan suara yang
+            menyenangkan.
+        </item>
+        <item>Apakah anak dapat berjalan di sepanjang ruangan tanpa jatuh atau terhuyung-huyung?</item>
+        <item>Apakah anak dapat mengambil benda kecil seperti kacang, kismis, atau potongan biskuit
+            dengan menggunakan ibu jari dan jari telunjuk?
+        </item>
+        <item>Jika anda menggelindingkan bola ke anak, apakah ia menggelindingkan/melemparkan
+            kembali bola pada anda?
+        </item>
+        <item>Apakah anak dapat memegang sendiri cangkir/gelas clan minum dari tempat tersebut
+            tanpa tumpah?
+        </item>
+        <item>Jika anda sedang melakukan pekerjaan rumah tangga, apakah anak meniru apa yang
+            anda lakukan?
+        </item>
+        <item>Apakah anak dapat meletakkan satu kubus di atas Gerak halus Ya Tida kubus yang lain
+            tanpa menjatuhkan kubus itu? Kubus yang digunakan ukuran 2.5-5.0 cm
+        </item>
+        <item>Apakah anak dapat mengucapkan paling sedikit 3 kata yang mempunyai arti selain
+            “papa” dan “mama”?
+        </item>
+        <item>Apakah anak dapat berjalan mundur 5 langkah atau lebih tanpa kehilangan
+            keseimbangan? (Anda mungkin dapat melihatnya ketika anak menarik mainannya)
+        </item>
+    </string-array>
+    <string-array name="kuesioner_24_bulan">
+        <item>Jika anda sedang melakukan pekerjaan rumah tangga, apakah anak meniru apa yang
+            anda lakukan?
+        </item>
+        <item>Apakah anak dapat meletakkan 1 buah kubus di atas kubus yang lain tanpa menjatuhkan
+            kubus itu? Kubus yang digunakan ukuran 2.5 — 5 cm
+        </item>
+        <item>Apakah anak dapat mengucapkan paling sedikit 3 kata yang mempunyai arti selain
+            "papa" dan "mama"?
+        </item>
+        <item>Apakah anak dapat berjalan mundur 5 langkah atau lebih tanpa kehilangan
+            keseimbangan?
+            (Anda mungkin dapat melihatnya ketika anak menarik mainannya)
+        </item>
+        <item>Dapatkah anak melepas pakaiannya seperti: baju, rok, atau celananya? (topi dan kaos
+            kaki tidak ikut dinilai).
+        </item>
+        <item>Dapatkah anak berjalan naik tangga sendiri? Jawab <u>YA</u> jika ia naik tangga dengan posisi
+            tegak atau berpegangan pada dinding atau pegangan tangga. Jawab <u>TIDAK</u> jika ia naik
+            tangga dengan merangkak atau anda tidak membolehkan anak naik tangga atau anak
+            harus berpegangan pada seseorang
+        </item>
+        <item>Tanpa bimbingan, petunjuk atau bantuan anda, dapatkah anak menunjuk dengan benar
+            paling sedikit satu bagian badannya (rambut, mata, hidung, mulut, atau bagian badan
+            yang lain)?
+        </item>
+        <item>Dapatkah anak makan nasi sendiri tanpa banyak tumpah?</item>
+        <item>Dapatkah anak membantu memungut mainannya sendiri atau membantu mengangkat
+            piring jika diminta?
+        </item>
+        <item>Dapatkah anak menendang bola kecil (sebesar bola tenis) ke depan tanpa berpegangan
+            pada apapun? Mendorong tidak ikut dinilai.
+        </item>
+    </string-array>
+    <string-array name="kuesioner_30_bulan">
+        <item>Dapatkah anak melepas pakaiannya seperti: baju, rok, atau celananya?
+            (topi dan kaos kaki tidak ikut dinilai)
+        </item>
+        <item>Dapatkah anak berjalan naik tangga sendiri? Jawab <u>YA</u> jika ia naik tangga dengan posisi
+            tegak atau berpegangan pada Binding atau pegangan tangga. Jawab <u>TIDAK</u> jika ia naik
+            tangga dengan merangkak atau anda tidak membolehkan anak naik tangga atau anak
+            harus berpegangan pada seseorang.
+        </item>
+        <item>Tanpa bimbingan, petunjuk atau bantuan anda, dapatkah anak menunjuk dengan benar
+            paling seclikit satu bagian badannya (rambut, mata, hidung, mulut, atau bagian badan
+            yang lain)?
+        </item>
+        <item>Dapatkah anak makan nasi sendiri tanpa banyak tumpah?</item>
+        <item>Dapatkah anak membantu memungut mainannya sendiri atau membantu mengangkat
+            piring jika diminta?
+        </item>
+        <item>Dapatkah anak menendang bola kecil (sebesar bola tenis) Gerak kasar ke depan tanpa
+            berpegangan pada apapun? Mendorong tidak ikut dinilai.
+        </item>
+        <item>Bila diberi pensil, apakah anak mencoret-coret kertas tanpa bantuan/petunjuk?</item>
+        <item>Dapatkah anak meletakkan 4 buah kubus satu persatu di atas kubus yang lain tanpa
+            menjatuhkan kubus itu? Kubus yang digunakan ukuran 2.5 – 5 cm
+        </item>
+        <item>Dapatkah anak menggunakan 2 kata pada saat berbicara seperti “minta minum”, “mau
+            tidur”? “Terimakasih” dan “Dadah” tidak ikut dinilai.
+        </item>
+        <item>Apakah anak dapat menyebut 2 diantara gambar binatang tanpa bantuan?</item>
+    </string-array>
+    <string-array name="kuesioner_36_bulan">
+        <item>Bila diberi pensil, apakah anak mencoret-coret kertas tanpa bantuan/petunjuk?</item>
+        <item>Dapatkah anak meletakkan 4 buah kubus satu persatu di atas kubus yang lain tanpa
+            menjatuhkan kubus itu? Kubus yang digunakan ukuran 2.5 – 5 cm.
+        </item>
+        <item>Dapatkah anak menggunakan 2 kata pada saat berbicara seperti “minta minum”, “mau
+            tidur”? “Terimakasih” dan “Dadah” tidak ikut dinilai.
+        </item>
+        <item>Apakah anak dapat menyebut 2 diantara gambar binatang tanpa bantuan?</item>
+        <item>Dapatkah anak melempar bola lurus ke arah perut atau dada anda dari jarak 1,5 meter?</item>
+        <item>Ikuti perintah ini dengan seksama. Jangan memberi isyarat dengan telunjuk atau mata
+            pada saat memberikan perintah berikut ini:
+            \n“Letakkan kertas ini di lantai”.
+            \n“Letakkan kertas ini di kursi”.
+            \n“Berikan kertas ini kepada ibu”.
+            \n\nDapatkah anak melaksanakan ketiga perintah tadi?
+        </item>
+        <item>Buat garis lurus ke bawah sepanjang sekurangkurangnya 2.5 cm. Suruh anak
+            menggambar garis lain di samping garis tsb. Jawab <u>YA</u> bila garis yang digambar lurus. Jawab <u>TIDAK
+            </u> bila garis
+            yang digambar berbelok.
+        </item>
+        <item>Letakkan selembar kertas seukuran buku di lantai. Apakah anak dapat melompati bagian
+            lebar kertas dengan mengangkat kedua kakinya secara bersamaan tanpa didahului lari?
+        </item>
+        <item>Dapatkah anak mengenakan sepatunya sendiri?</item>
+        <item>Dapatkah anak mengayuh sepeda roda tiga sejauh sedikitnya 3 meter?</item>
+    </string-array>
+    <string-array name="kuesioner_42_bulan">
+        <item>Dapatkah anak mengenakan sepatunya sendiri?</item>
+        <item>Dapatkah anak mengayuh sepeda rods tiga sejauh sedikitnya 3 meter?</item>
+        <item>Setelah makan, apakah anak mencuci clan mengeringkan tangannya dengan balk
+            sehingga anda ticlak perlu mengulanginya?
+        </item>
+        <item>Suruh anak berdiri satu kaki tanpa berpegangan. Jika perlu tunjukkan caranya clan beri
+            anak anda kesempatan melakukannya 3 kali. Dapatkah ia mempertahankan
+            keseimbangan dalam waktu 2 detik atau lebih?
+        </item>
+        <item>Letakkan selembar kertas seukuran buku ini di lantai. Apakah anak dapat melompati
+            panjang kertas ini dengan mengangkat kedua kakinya secara bersamaan tanpa didahului
+            lari?
+        </item>
+        <item>Jangan membantu anak clan jangan menyebut lingkaran. Suruh anak menggambar
+            seperti contoh ini di kertas kosong yang tersedia. Dapatkah anak menggambar
+            lingkaran?
+        </item>
+        <item>Dapatkah anak meletakkan 8 buah kubus satu persatu di atas yang lain tanpa
+            menjatuhkan kubus tersebut? Kubus yang digunakan ukuran 2.5 – 5 cm.
+        </item>
+        <item>Apakah anak dapat bermain petak umpet, ular naga atau permainan lain dimana ia ikut
+            bermain dan mengikuti aturan bermain?
+        </item>
+        <item>Dapatkah anak mengenakan celana panjang, kemeja, baju atau kaos kaki tanpa di
+            bantu? (Tidak termasuk kemandirian memasang kancing, gesper atau ikat pinggang)
+        </item>
+    </string-array>
+    <string-array name="kuesioner_48_bulan">
+        <item>Dapatkah anak mengayuh sepeda roda tiga sejauh sedikitnya 3 meter?</item>
+        <item>Setelah makan, apakah anak mencuci dan mengeringkan tangannya dengan baik
+            sehingga anda tidak perlu mengulanginya?
+        </item>
+        <item>Suruh anak berdiri satu kaki tanpa berpegangan. Jika perlu tunjukkan caranya dan beri
+            anak anda kesempatan melakukannya 3 kali. Dapatkah ia mempertahankan
+            keseimbangan dalam waktu 2 detik atau lebih?
+        </item>
+        <item>Letakkan selembar kertas seukuran buku ini di lantai. Apakah anak dapat melompati
+            panjang kertas ini dengan mengangkat kedua kakinya secara bersamaan tanpa didahului
+            lari?
+        </item>
+        <item>Jangan membantu anak dan jangan menyebut lingkaran. Suruh anak menggambar
+            seperti contoh ini di kertas kosong yang tersedia. Dapatkah anak menggambar
+            lingkaran?
+        </item>
+        <item>Dapatkah anak meletakkan 8 buah kubus satu persatu di atas yang lain tanpa
+            menjatuhkan kubus tersebut?
+            Kubus yang digunakan ukuran 2.5 – 5 cm.
+        </item>
+        <item>Apakah anak dapat bermain petak umpet, ular naga atau permainan lain dimana ia ikut
+            bermain dan mengikuti aturan bermain?
+        </item>
+        <item>Dapatkah anak mengenakan celana panjang, kemeja, baju atau kaos kaki tanpa di
+            bantu? (Tidak termasuk memasang kancing, gesper atau ikat pinggang)
+        </item>
+        <item>Dapatkah anak menyebutkan nama lengkapnya tanpa dibantu? Jawab <u>TIDAK</u> jika ia
+            hanya menyebutkan sebagian namanya atau ucapannya sulit dimengerti.
+        </item>
+        <item></item>
+    </string-array>
+    <string-array name="kuesioner_54_bulan">
+        <item>Dapatkah anak meletakkan 8 buah kubus satu persatu di atas yang lain tanpa
+            menjatuhkan kubus tersebut? Kubus yang digunakan ukuran 2-5 – 5 cm.
+        </item>
+        <item>Apakah anak dapat bermain petak umpet, ular naga atau permainan lain dimana ia ikut
+            bermain dan mengikuti aturan bermain?
+        </item>
+        <item>Dapatkah anak mengenakan celana panjang, kemeja, baju atau kaos kaki tanpa di
+            bantu? (Tidak termasuk memasang kancing, gesper atau ikat pinggang)
+        </item>
+        <item>Dapatkah anak menyebutkan nama lengkapnya tanpa dibantu? Jawab TIDAK jika ia
+            hanya menyebut sebagian namanya atau ucapannya sulit dimengerti.
+        </item>
+        <item>Isi titik-titik di bawah ini dengan jawaban anak. Jangan membantu kecuali mengulangi
+            pertanyaan.
+            \n"Apa yang kamu lakukan jika kamu kedinginan?"
+            \n"Apa yang kamu lakukan jika kamu lapar?"
+            \n"Apa yang kamu lakukan jika kamu lelah?"
+            \n\nJawab <u>YA</u> bila anak menjawab ke 3 pertanyaan tadi dengan benar, bukan dengan
+            gerakan atau isyarat.
+            \n\nJika kedinginan, jawaban yang benar adalah "menggigil" ,"pakai mantel’ atau "masuk
+            kedalam rumah’.
+            \nJika lapar, jawaban yang benar adalah "makan"
+            \nJika lelah, jawaban yang benar adalah "mengantuk", "tidur", "berbaring/tidur-tiduran",
+            "istirahat" atau "diam sejenak"
+        </item>
+        <item>Apakah anak dapat mengancingkan bajunya atau pakaian boneka?</item>
+        <item>Suruh anak berdiri satu kaki tanpa berpegangan. Jika perlu tunjukkan caranya dan beri
+            anak ands kesempatan melakukannya 3 kali. Dapatkah ia mempertahankan
+            keseimbangan dalam waktu 6 detik atau lebih?
+        </item>
+        <item>Jangan mengoreksi/membantu anak. Jangan menyebut kata "lebih panjang".
+            \nPerlihatkan dua gambar garis dengan salah satu garis lebih panjang.
+            Tanyakan:
+            <u>"Mana garis yang lebih panjang?"</u>
+            \nMinta anak menunjuk garis yang lebih panjang.
+            \nSetelah anak menunjuk, putar lembar ini dan ulangi pertanyaan tersebut.
+            Setelah anak menunjuk, putar lembar ini lagi dan ulangi pertanyaan tadi.
+            \nApakah anak dapat menunjuk garis yang lebih panjang sebanyak 3 kali dengan benar?
+        </item>
+        <item>Berikan sebuah gambar tanda Plus (+). Jangan membantu anak dan jangan memberitahu nama gambar, suruh anak
+            menggambar seperti contoh di kertas kosong yang tersedia. Berikan 3 kali
+            kesempatan. Apakah anak dapat menggambar seperti contoh?
+        </item>
+        <item>Ikuti perintah ini dengan seksama. Jangan memberi isyarat dengan telunjuk atau mats
+            pada saat memberikan perintah berikut ini: \n"Letakkan kertas ini di atas lantai".
+            \n"Letakkan kertas ini di bawah kursi".
+            \n"Letakkan kertas ini di depan kamu"
+            \n"Letakkan kertas ini di belakang kamu"
+            \n\nJawab <u>YA</u> hanya jika anak mengerti arti "di atas", "di bawah", "di depan" dan "di
+            belakang”
+        </item>
+    </string-array>
+    <string-array name="kuesioner_60_bulan">
+        <item>Isi titik-titik di bawah ini dengan jawaban anak. Jangan membantu kecuali mengulangi
+            pertanyaan.
+            \n"Apa yang kamu lakukan jika kamu kedinginan?"
+            \n"Apa yang kamu lakukan jika kamu lapar?"
+            \n"Apa yang kamu lakukan jika kamu lelah?"
+            \n\nJawab <u>YA</u> bila anak menjawab ke 3 pertanyaan tadi dengan benar, bukan dengan
+            gerakan atau isyarat.
+            \n\nJika kedinginan, jawaban yang benar adalah "menggigil" ,"pakai mantel’ atau "masuk
+            kedalam rumah’.
+            \nJika lapar, jawaban yang benar adalah "makan"
+            \nJika lelah, jawaban yang benar adalah "mengantuk", "tidur", "berbaring/tidur-tiduran",
+            "istirahat" atau "diam sejenak"
+        </item>
+        <item>Apakah anak dapat mengancingkan bajunya atau pakaian boneka?</item>
+        <item>Suruh anak berdiri satu kaki tanpa berpegangan. Jika perlu tunjukkan caranya dan beri
+            anak ands kesempatan melakukannya 3 kali. Dapatkah ia mempertahankan
+            keseimbangan dalam waktu 6 detik atau lebih?
+        </item>
+        <item>Jangan mengoreksi/membantu anak. Jangan menyebut kata "lebih panjang".
+            \nPerlihatkan dua gambar garis dengan salah satu garis lebih panjang.
+            Tanyakan:
+            <u>"Mana garis yang lebih panjang?"</u>
+            \nMinta anak menunjuk garis yang lebih panjang.
+            \nSetelah anak menunjuk, putar lembar ini dan ulangi pertanyaan tersebut.
+            Setelah anak menunjuk, putar lembar ini lagi dan ulangi pertanyaan tadi.
+            \nApakah anak dapat menunjuk garis yang lebih panjang sebanyak 3 kali dengan benar?
+        </item>
+        <item>Berikan sebuah gambar tanda Plus (+). Jangan membantu anak dan jangan memberitahu nama gambar, suruh anak
+            menggambar seperti contoh di kertas kosong yang tersedia. Berikan 3 kali
+            kesempatan. Apakah anak dapat menggambar seperti contoh?
+        </item>
+        <item>Ikuti perintah ini dengan seksama. Jangan memberi isyarat dengan telunjuk atau mats
+            pada saat memberikan perintah berikut ini: \n"Letakkan kertas ini di atas lantai".
+            \n"Letakkan kertas ini di bawah kursi".
+            \n"Letakkan kertas ini di depan kamu"
+            \n"Letakkan kertas ini di belakang kamu"
+            \n\nJawab <u>YA</u> hanya jika anak mengerti arti "di atas", "di bawah", "di depan" dan "di
+            belakang”
+        </item>
+        <item>Apakah anak bereaksi dengan tenang dan tidak rewel (tanpa menangis atau
+            menggelayut pada anda) pada saat anda meninggalkannya?
+        </item>
+        <item>Jangan menunjuk, membantu atau membetulkan, katakan pada anak :
+            \n“Tunjukkan segi empat merah”
+            \n“Tunjukkan segi empat kuning”
+            \n“Tunjukkan segi empat biru”
+            \n“Tunjukkan segi empat hijau”
+            \n\nDapatkah anak menunjuk keempat warna itu dengan benar?
+        </item>
+        <item>Suruh anak melompat dengan satu kaki beberapa kali tanpa berpegangan (lompatan
+            dengan dua kaki tidak ikut dinilai). Apakah ia dapat melompat 2-3 kali dengan satu kaki?
+        </item>
+        <item>Dapatkah anak sepenuhnya berpakaian sendiri tanpa bantuan?</item>
+    </string-array>
+    <string-array name="kuesioner_66_bulan">
+        <item>Berikan sebuah gambar tanda Plus (+). Jangan membantu anak dan jangan memberitahu nama gambar, suruh anak
+            menggambar seperti contoh di kertas kosong yang tersedia. Berikan 3 kali
+            kesempatan. Apakah anak dapat menggambar seperti contoh?
+        </item>
+        <item>Ikuti perintah ini dengan seksama. Jangan memberi isyarat dengan telunjuk atau mats
+            pada saat memberikan perintah berikut ini: \n"Letakkan kertas ini di atas lantai".
+            \n"Letakkan kertas ini di bawah kursi".
+            \n"Letakkan kertas ini di depan kamu"
+            \n"Letakkan kertas ini di belakang kamu"
+            \n\nJawab <u>YA</u> hanya jika anak mengerti arti "di atas", "di bawah", "di depan" dan "di
+            belakang”
+        </item>
+        <item>Apakah anak bereaksi dengan tenang dan tidak rewel (tanpa menangis atau
+            menggelayut pada anda) pada saat anda meninggalkannya?
+        </item>
+        <item>Jangan menunjuk, membantu atau membetulkan, katakan pada anak :
+            \n“Tunjukkan segi empat merah”
+            \n“Tunjukkan segi empat kuning”
+            \n“Tunjukkan segi empat biru”
+            \n“Tunjukkan segi empat hijau”
+            \n\nDapatkah anak menunjuk keempat warna itu dengan benar?
+        </item>
+        <item>Suruh anak melompat dengan satu kaki beberapa kali tanpa berpegangan (lompatan
+            dengan dua kaki tidak ikut dinilai). Apakah ia dapat melompat 2-3 kali dengan satu kaki?
+        </item>
+        <item>Dapatkah anak sepenuhnya berpakaian sendiri tanpa bantuan?</item>
+        <item>Suruh anak menggambar di tempat kosong yang tersedia. Katakan padanya: "Buatlah
+            gambar orang".
+            \nJangan memberi perintah lebih dari itu. Jangan bertanya/ mengingatkan anak bila ada
+            bagian yang belum tergambar. Dalam memberi nilai, hitunglah berapa bagian tubuh
+            yang tergambar. Untuk bagian tubuh yang berpasangan seperti mata, telinga, lengan
+            dan kaki, setiap pasang dinilai satu bagian. Dapatkah anak menggambar sedikitnya 3
+            bagian tubuh?
+        </item>
+        <item>Pada gambar orang yang dibuat pada pertanyaan sebelumnya, dapatkah anak menggambar sedikitnya 6
+            bagian tubuh?
+        </item>
+        <item>Tulis apa yang dikatakan anak pada kalimat-kalimat yang belum selesai ini, jangan
+            membantu kecuali mengulang pertanyaan:
+            \n"Jika kuda besar maka tikus ………
+            \n"Jika api panas maka es ………
+            \n"Jika ibu seorang wanita maka ayah seorang ………
+            \nApakah anak menjawab dengan benar (tikus kecil, es dingin, ayah seorang pria) ?
+        </item>
+        <item>Apakah anak dapat menangkap bola kecil sebesar bola tenis/bola kasti hanya dengan
+            menggunakan kedua tangannya? (Bola besar tidak ikut dinilai).
+        </item>
+    </string-array>
+    <string-array name="kuesioner_72_bulan">
+        <item>Jangan menunjuk, membantu atau membetulkan, katakan pada anak :
+            \n“Tunjukkan segi empat merah”
+            \n“Tunjukkan segi empat kuning”
+            \n“Tunjukkan segi empat biru”
+            \n“Tunjukkan segi empat hijau”
+            \n\nDapatkah anak menunjuk keempat warna itu dengan benar?
+        </item>
+        <item>Suruh anak melompat dengan satu kaki beberapa kali tanpa berpegangan (lompatan
+            dengan dua kaki tidak ikut dinilai). Apakah ia dapat melompat 2-3 kali dengan satu kaki?
+        </item>
+        <item>Dapatkah anak sepenuhnya berpakaian sendiri tanpa bantuan?</item>
+        <item>Suruh anak menggambar di tempat kosong yang tersedia. Katakan padanya: "Buatlah
+            gambar orang".
+            \nJangan memberi perintah lebih dari itu. Jangan bertanya/ mengingatkan anak bila ada
+            bagian yang belum tergambar. Dalam memberi nilai, hitunglah berapa bagian tubuh
+            yang tergambar. Untuk bagian tubuh yang berpasangan seperti mata, telinga, lengan
+            dan kaki, setiap pasang dinilai satu bagian. Dapatkah anak menggambar sedikitnya 3
+            bagian tubuh?
+        </item>
+        <item>Pada gambar orang yang dibuat pada pertanyaan sebelumnya, dapatkah anak menggambar sedikitnya 6
+            bagian tubuh?
+        </item>
+        <item>Tulis apa yang dikatakan anak pada kalimat-kalimat yang belum selesai ini, jangan
+            membantu kecuali mengulang pertanyaan:
+            \n"Jika kuda besar maka tikus ………
+            \n"Jika api panas maka es ………
+            \n"Jika ibu seorang wanita maka ayah seorang ………
+            \nApakah anak menjawab dengan benar (tikus kecil, es dingin, ayah seorang pria) ?
+        </item>
+        <item>Apakah anak dapat menangkap bola kecil sebesar bola tenis/bola kasti hanya dengan
+            menggunakan kedua tangannya? (Bola besar tidak ikut dinilai).
+        </item>
+        <item>Suruh anak berdiri satu kaki tanpa berpegangan. Jika perlu tunjukkan caranya clan beri
+            anak ands kesempatan melakukannya 3 kali. Dapatkah ia mempertahankan
+            keseimbangan dalam waktu 11 detik atau lebih?
+        </item>
+        <item>Berikan sebuah gambar Persegi. Jangan membantu anak dan jangan memberitahu nama gambar, suruh anak
+            menggambar seperti contoh di kertas kosong yang tersedia. Berikan 3 kali
+            kesempatan. Apakah anak dapat menggambar seperti contoh?
+        </item>
+        <item>lsi titik-titik di bawah ini dengan jawaban anak. Jangan membantu kecuali mengulangi
+            pertanyaan sampai 3 kali bila anak menanyakannya.
+            \n"Sendok dibuat dari apa?"
+            \n"Sepatu dibuat dari apa?"
+            \n"Pintu dibuat dari apa?"
+            \n\nApakah anak dapat menjawab ke 3 pertanyaan di atas dengan benar? Sendok dibuat
+            dari besi, baja, plastik, kayu.
+            Sepatu dibuat dari kulit, karet, kain, plastik, kayu.
+            Pintu dibuat dari kayu, besi, kaca.
+        </item>
+    </string-array>
+
 </resources>

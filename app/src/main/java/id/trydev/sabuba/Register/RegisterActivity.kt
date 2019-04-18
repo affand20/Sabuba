@@ -284,9 +284,9 @@ class RegisterActivity : AppCompatActivity(), RegisterView, AnkoLogger {
 //            })
             super.onBackPressed()
         }
-//        else{
-//            super.onBackPressed()
-//        }
+        else{
+            super.onBackPressed()
+        }
     }
 
     override fun showRegisterLoading() {

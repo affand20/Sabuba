@@ -26,9 +26,8 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
             // add data to firestore
             if (role=="dokter"){
                 mFirestore.collection("users")
-                    .document("dokter")
-                    .collection("dokter")
-                    .add(user)
+                    .document("${prefs.token}")
+                    .set(user)
                     .addOnSuccessListener {
                         view.hideRegisterLoading()
                         view.showRegisterSuccess()
@@ -42,9 +41,8 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
 
             if (role=="ibu"){
                 mFirestore.collection("users")
-                    .document("ibu")
-                    .collection("ibu")
-                    .add(user)
+                    .document("${prefs.token}")
+                    .set(user)
                     .addOnSuccessListener {
                         view.hideRegisterLoading()
                         view.showRegisterSuccess()
@@ -61,7 +59,9 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
 
     fun saveDataBalita(data:DataBalita){
         view.showSubmitDataLoading()
-        mFirestore.collection("data-balita").add(data)
+        mFirestore.collection("data-balita")
+            .document("${prefs.token}")
+            .set(data)
             .addOnSuccessListener {
                 view.hideSubmitDataLoading()
                 view.showSubmitDataSuccess()

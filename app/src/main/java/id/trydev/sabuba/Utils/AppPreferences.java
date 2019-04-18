@@ -15,6 +15,12 @@ public class AppPreferences {
         prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
     }
 
+    public void resetPreference(){
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.clear();
+        editor.apply();
+    }
+
     public void setToken(String token){
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(TOKEN, token);
