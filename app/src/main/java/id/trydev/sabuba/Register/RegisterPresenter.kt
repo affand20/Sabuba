@@ -26,7 +26,7 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
             // add data to firestore
             if (role=="dokter"){
                 mFirestore.collection("users")
-                    .document("${prefs.token}")
+                    .document(prefs.token)
                     .set(user)
                     .addOnSuccessListener {
                         view.hideRegisterLoading()
@@ -41,7 +41,7 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
 
             if (role=="ibu"){
                 mFirestore.collection("users")
-                    .document("${prefs.token}")
+                    .document(prefs.token)
                     .set(user)
                     .addOnSuccessListener {
                         view.hideRegisterLoading()

@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.View
 import id.trydev.sabuba.DeteksiDini.DeteksiDiniActivity
+import id.trydev.sabuba.Galeri.GaleriActivity
 import id.trydev.sabuba.Menu.ArtikelTips.Adapter.ArtikelTipsAdapter
 import id.trydev.sabuba.Menu.ArtikelTips.ArtikelTipsPresenter
 import id.trydev.sabuba.Menu.ArtikelTips.ArtikelTipsView
@@ -47,6 +48,10 @@ class MenuActivity : AppCompatActivity(), ArtikelTipsView, AnkoLogger {
 
         deteksi_dini.onClick {
             startActivity<DeteksiDiniActivity>()
+        }
+
+        galeri.onClick {
+            startActivity<GaleriActivity>()
         }
     }
 

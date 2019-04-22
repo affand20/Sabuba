@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/take_from_camera"
+        android:icon="@drawable/ic_add_a_photo_black_24dp"
+        android:title="Ambil Foto"
+        />
+    <item
+        android:id="@+id/take_from_gallery"
+        android:icon="@drawable/ic_insert_photo_black_24dp"
+        android:title="Pilih dari Galeri"/>
+</menu>

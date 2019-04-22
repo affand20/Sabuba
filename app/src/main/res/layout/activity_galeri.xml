@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,4 +7,52 @@
         android:layout_height="match_parent"
         tools:context=".Galeri.GaleriActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+            tools:listitem="@layout/layout_galeri"
+            android:id="@+id/rv_galeri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <ProgressBar
+            android:visibility="gone"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:visibility="gone"
+            android:id="@+id/progress_upload"
+            android:text="@string/upload_progress"
+            android:layout_below="@id/progress_bar"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:text="Mulai menambahkan foto sekarang"
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.FloatingActionButton
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:id="@+id/fab_add_foto"
+            app:elevation="4dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <!--<com.leinardi.android.speeddial.SpeedDialView-->
+            <!--android:id="@+id/speedDial"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--app:sdMainFabClosedBackgroundColor="@color/colorPrimaryDark"-->
+            <!--app:sdMainFabOpenedBackgroundColor="@color/colorPrimaryDark"-->
+            <!--app:sdMainFabClosedSrc="@drawable/ic_add_black_24dp" />-->
+</RelativeLayout>

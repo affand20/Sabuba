@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Sabuba</string>
+    <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
+    <string name="rationale_external_storage">This app needs access to your external storage so you can take pictures from there.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to MainActivity with the following permissions:
+        \n\nCamera: %1s
+        \nExternal Storage: %2s
+    </string>
+    <string name="upload_progress">Sedang mengupload %1s/%2s foto</string>
+
     <string name="daftar_disini">
         <u>Daftar disini</u>
     </string>
