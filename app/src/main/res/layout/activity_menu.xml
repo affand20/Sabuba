@@ -94,7 +94,7 @@
                         android:layout_marginTop="8dp"
 
                         android:layout_gravity="center_horizontal"
-                        android:text="Imuniasasi"
+                        android:text="Imunisasi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -154,7 +154,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                 <ImageButton
-                        android:id="@+id/pengaturan"
+                        android:id="@+id/bantuan"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/ic_settings"
                         android:background="@android:color/transparent"
@@ -163,7 +163,7 @@
                 <TextView
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="Pengaturan"
+                        android:text="Bantuan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -171,7 +171,21 @@
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content">
+                <ImageButton
+                        android:id="@+id/keluar"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_settings"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Keluar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
             <LinearLayout
                     android:layout_weight="1"
                     android:orientation="vertical"

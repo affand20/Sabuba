@@ -7,14 +7,20 @@ import android.os.Bundle
 import android.support.customtabs.CustomTabsIntent
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import com.google.firebase.auth.FirebaseAuth
+import id.trydev.sabuba.BalitaSakit.BalitaSakitActivity
+import id.trydev.sabuba.ChatDokter.ChatDokterActivity
 import id.trydev.sabuba.DeteksiDini.DeteksiDiniActivity
 import id.trydev.sabuba.Galeri.GaleriActivity
+import id.trydev.sabuba.Login.LoginActivity
 import id.trydev.sabuba.Menu.ArtikelTips.Adapter.ArtikelTipsAdapter
 import id.trydev.sabuba.Menu.ArtikelTips.ArtikelTipsPresenter
 import id.trydev.sabuba.Menu.ArtikelTips.ArtikelTipsView
 import id.trydev.sabuba.Menu.ArtikelTips.Model.ArtikelTips
 import id.trydev.sabuba.R
+import id.trydev.sabuba.Utils.AppPreferences
 import kotlinx.android.synthetic.main.activity_menu.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
@@ -28,10 +34,12 @@ class MenuActivity : AppCompatActivity(), ArtikelTipsView, AnkoLogger {
     lateinit var adapter:ArtikelTipsAdapter
     val listArtikel:MutableList<ArtikelTips> = mutableListOf()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+
+
+        val prefs = AppPreferences(this)
 
         presenter = ArtikelTipsPresenter(this)
         adapter = ArtikelTipsAdapter(listArtikel){
@@ -53,11 +61,33 @@ class MenuActivity : AppCompatActivity(), ArtikelTipsView, AnkoLogger {
         galeri.onClick {
             startActivity<GaleriActivity>()
         }
+
+        balita_sakit.onClick {
+            startActivity<BalitaSakitActivity>()
+        }
+
+        keluar.onClick {
+            FirebaseAuth.getInstance().signOut()
+            prefs.resetPreference()
+            startActivity<LoginActivity>()
+            finish()
+        }
+
+        chat_dokter.onClick {
+            startActivity<ChatDokterActivity>()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        if (item?.itemId == R.id.chat){
+            startActivity<ChatDokterActivity>()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun showLoading() {

@@ -4,53 +4,53 @@ import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.ActivityInfo
-import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.leinardi.android.speeddial.SpeedDialActionItem
-import com.leinardi.android.speeddial.SpeedDialView
 import com.zhihu.matisse.Matisse
 import com.zhihu.matisse.MimeType
+import com.zhihu.matisse.engine.impl.GlideEngine
 import id.trydev.sabuba.Galeri.Adapter.GaleriAdapter
 import id.trydev.sabuba.Galeri.Model.GaleriImage
 import id.trydev.sabuba.R
-import id.trydev.sabuba.Utils.Glide4Engine
 import kotlinx.android.synthetic.main.activity_galeri.*
-import org.jetbrains.anko.AnkoLogger
-import org.jetbrains.anko.find
-import org.jetbrains.anko.info
+import kotlinx.android.synthetic.main.activity_galeri.progress_bar
+import net.alhazmy13.mediagallery.library.activity.MediaGallery
+import net.alhazmy13.mediagallery.library.views.MediaGalleryView
+import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
-import org.jetbrains.anko.toast
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 
-class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.PermissionCallbacks, AnkoLogger {
-
+class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.PermissionCallbacks, AnkoLogger, MediaGalleryView.OnImageClicked {
     lateinit var presenter:GaleriPresenter
+
     lateinit var adapter:GaleriAdapter
     val perms = arrayOf(Manifest.permission.CAMERA,Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE)
     val listGaleri:MutableList<GaleriImage> = mutableListOf()
-
+    var listUrl:ArrayList<String> = arrayListOf()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_galeri)
 
+        supportActionBar?.title = "Galeri"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         info(FirebaseAuth.getInstance().currentUser?.uid)
 
-        rv_galeri.layoutManager = GridLayoutManager(this,2)
-//        rv_galeri.layoutManager = LinearLayoutManager(this)
-        adapter = GaleriAdapter(listGaleri){
-            toast(it.Url)
-        }
+//        galeri_view.layoutManager = GridLayoutManager(this,2)
+//        galeri_view.layoutManager = LinearLayoutManager(this)
+//        adapter = GaleriAdapter(listGaleri){
+//            startActivity<GaleriDetailActivity>("list-gambar" to listUrl, "position" to listUrl.indexOf(it.Url))
+//        }
+
+
+
         presenter = GaleriPresenter(this,this)
-        rv_galeri.adapter = adapter
+//        galeri_view.adapter = adapter
         presenter.getGambar()
 
         fab_add_foto.onClick {
@@ -66,7 +66,6 @@ class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.Permissi
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this)
     }
 
-
     @AfterPermissionGranted(rcCamera)
     private fun getPermissionCamera() {
         if (hasPermissionCamera()){
@@ -81,6 +80,7 @@ class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.Permissi
         }
     }
 
+
     @AfterPermissionGranted(rcStorage)
     private fun getPermissionStorage(){
         if (hasPermissionStorage()){
@@ -92,7 +92,7 @@ class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.Permissi
                 .gridExpectedSize(resources.getDimensionPixelSize(R.dimen.grid_expected_size))
                 .restrictOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
                 .thumbnailScale(0.85f)
-                .imageEngine(Glide4Engine())
+                .imageEngine(GlideEngine())
                 .forResult(rcChoose)
         } else{
             EasyPermissions.requestPermissions(
@@ -105,8 +105,8 @@ class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.Permissi
     }
 
     private fun hasPermissionCamera():Boolean = EasyPermissions.hasPermissions(this, Manifest.permission.CAMERA)
-    private fun hasPermissionStorage():Boolean = EasyPermissions.hasPermissions(this,Manifest.permission.READ_EXTERNAL_STORAGE)
 
+    private fun hasPermissionStorage():Boolean = EasyPermissions.hasPermissions(this,Manifest.permission.READ_EXTERNAL_STORAGE)
     override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
         if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)){
             AppSettingsDialog.Builder(this).build().show()
@@ -133,22 +133,22 @@ class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.Permissi
     }
 
     override fun showEmptyText() {
-        rv_galeri.visibility = View.GONE
+        galeri_view.visibility = View.GONE
         empty_text.visibility = View.VISIBLE
     }
 
     override fun hideEmptyText() {
-        rv_galeri.visibility = View.VISIBLE
+        galeri_view.visibility = View.VISIBLE
         empty_text.visibility = View.GONE
     }
 
     override fun showLoading() {
-        rv_galeri.visibility = View.GONE
+        galeri_view.visibility = View.GONE
         progress_bar.visibility = View.VISIBLE
     }
 
     override fun hideLoading() {
-        rv_galeri.visibility = View.VISIBLE
+        galeri_view.visibility = View.VISIBLE
         progress_bar.visibility = View.GONE
     }
 
@@ -163,8 +163,33 @@ class GaleriActivity : AppCompatActivity(), GaleriView, EasyPermissions.Permissi
 
     override fun showFoto(listGaleri: List<GaleriImage>) {
         this.listGaleri.clear()
+        this.listUrl.clear()
         this.listGaleri.addAll(listGaleri)
-        adapter.notifyDataSetChanged()
+//        adapter.notifyDataSetChanged()
+        listGaleri.forEach {
+            listUrl.add(it.Url)
+        }
+        info(listUrl)
+
+        galeri_view.setImages(listUrl)
+        galeri_view.setOnImageClickListener(this)
+        galeri_view.setOrientation(MediaGalleryView.VERTICAL)
+        galeri_view.notifyDataSetChanged()
+    }
+
+    override fun onImageClicked(pos: Int) {
+        MediaGallery.Builder(this, listUrl)
+            .title("Galeri")
+            .backgroundColor(android.R.color.black)
+            .selectedImagePosition(pos)
+            .show()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        if (item?.itemId == android.R.id.home){
+            onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     companion object {

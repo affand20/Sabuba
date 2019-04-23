@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import id.trydev.sabuba.Menu.ArtikelTips.Model.ArtikelTips
 import id.trydev.sabuba.R
-import id.trydev.sabuba.Utils.GlideApp
 import org.jetbrains.anko.find
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
@@ -28,15 +28,23 @@ class ArtikelTipsAdapter(val listArtikel:List<ArtikelTips>, val listener:(Artike
     class ViewHolder(val view: View):RecyclerView.ViewHolder(view) {
         val judul = view.find<TextView>(R.id.judul_artikel_tips)
         val image = view.find<ImageView>(R.id.gambar_artikel_tips)
-
+//
         fun bindItem(item:ArtikelTips, listener: (ArtikelTips)->Unit){
             judul.text = item.judul
-            GlideApp.with(view)
-                .asBitmap()
-                .centerCrop()
-                .thumbnail(0.25f)
+//            GlideApp.with(view)
+//                .asBitmap()
+//                .centerCrop()
+//                .thumbnail(0.25f)
+//                .load(item.gambar)
+//                .fallback(R.color.grey)
+//                .into(image)
+            Glide.with(view.context)
                 .load(item.gambar)
+                .asBitmap()
+                .thumbnail(0.25f)
+                .placeholder(android.R.color.white)
                 .fallback(R.color.grey)
+                .centerCrop()
                 .into(image)
             itemView.onClick {
                 listener(item)

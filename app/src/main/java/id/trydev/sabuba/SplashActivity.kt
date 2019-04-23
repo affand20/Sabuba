@@ -3,6 +3,7 @@ package id.trydev.sabuba
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import id.trydev.sabuba.ChatDokter.ChatDokterActivity
 import id.trydev.sabuba.Login.LoginActivity
 import id.trydev.sabuba.Menu.MenuActivity
 import id.trydev.sabuba.Utils.AppPreferences
@@ -23,10 +24,13 @@ class SplashActivity : AppCompatActivity(), AnkoLogger {
 
         Handler().postDelayed({
             info("post delayed")
-            if (prefs.token == null){
+            if (prefs.token == null || prefs.role == null){
                 startActivity<LoginActivity>()
                 finish()
-            } else{
+            } else if (prefs.role == "dokter"){
+                startActivity<ChatDokterActivity>()
+                finish()
+            } else {
                 startActivity<MenuActivity>()
                 finish()
             }

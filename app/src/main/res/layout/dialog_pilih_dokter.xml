@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:padding="16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+            android:text="Pilih Dokter"
+            android:id="@+id/dialog_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_bar_dialog"
+            android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/dialog_title"
+            android:id="@+id/rv_kontak_dokter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

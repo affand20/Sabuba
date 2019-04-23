@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Sabuba</string>
     <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
-    <string name="rationale_external_storage">This app needs access to your external storage so you can take pictures from there.</string>
+    <string name="rationale_external_storage">This app needs access to your external storage so you can take pictures
+        from there.
+    </string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
@@ -11,6 +13,52 @@
         \nExternal Storage: %2s
     </string>
     <string name="upload_progress">Sedang mengupload %1s/%2s foto</string>
+
+    <string-array name="list_sakit">
+        <item>Batuk</item>
+        <item>Diare/Mencret</item>
+        <item>Demam</item>
+        <item>Luka dan Koreng</item>
+    </string-array>
+
+    <string-array name="solusi_batuk">
+        <item>Berikan ASI lebih sering</item>
+        <item>Beri minum air matang lebih banyak</item>
+        <item>Jika umurnya diatas 1 tahun, beri kecap manis atau madu dicampur air jeruk nipis sebagai pelega
+            tenggorokan
+        </item>
+        <item>Jauhkan dari asap rokok, asap dapur, asap sampah, polusi kendaraan bermotor dan debu</item>
+    </string-array>
+
+    <string-array name="solusi_diare">
+        <item>Jika anak masih menyusu, terus berikan ASI dan MP-ASI</item>
+        <item>Berikan segera 1/2 – 1 gelas cairan oralit setiap anak buang air besar, jika tidak ada oralit, berikan air
+            matang, kuah sayur bening, dan air tajin
+        </item>
+        <item>Pemberian zinc setiap hari selama 10 hari berturut-turut untuk anak usia
+            <![CDATA[<6 bulan 1kali 1/2 tablet]]></item>
+        <item>Pemberian zinc setiap hari selama 10 hari berturut-turut untuk anak usia 6 bulan - 5 tahun 1kali 1
+            tablet
+        </item>
+        <item>Beri MP-ASI atau makan seperti biasa</item>
+        <item>Jangan beri obat apapun kecuali dari petugas kesehatan</item>
+    </string-array>
+
+    <string-array name="solusi_demam">
+        <item>Untuk daerah endemis malaria, balita harus tidur di dalam kelambu anti nyamik (mengandung insektisida)
+        </item>
+        <item>Jika masih menyusu, berikan ASI lebih sering</item>
+        <item>Beri minum lebih sering dan lebih banyak</item>
+        <item>Jangan diselimuti atau diberi baju tebal</item>
+        <item>Kompres dengan air biasa atu air hangat</item>
+        <item>Jangan kompres dengan air dingin karena anak bisa menggigil</item>
+        <item>Jika demam tinggi, beri obat penurun panas sesuai dosis</item>
+    </string-array>
+
+    <string-array name="solusi_luka_dan_koreng">
+        <item>Untuk luka, cuci bersih luka dengan air bersih mengalir</item>
+        <item>Periksakan ke fasilitas pelayanan kesehatan</item>
+    </string-array>
 
     <string name="daftar_disini">
         <u>Daftar disini</u>

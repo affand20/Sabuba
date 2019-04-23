@@ -6,4 +6,5 @@ interface LoginView{
     fun showFailedLogin(msg:String)
     fun showLoading()
     fun hideLoading()
+    fun showDokterMenu()
 }

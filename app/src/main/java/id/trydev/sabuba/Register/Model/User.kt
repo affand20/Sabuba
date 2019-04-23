@@ -1,3 +1,17 @@
 package id.trydev.sabuba.Register.Model
 
-data class User (val uid:String, val nama:String, val role:String)
+class User {
+    var uid:String = ""
+    var nama:String = ""
+    var role:String = ""
+
+    constructor()
+
+    constructor(uid: String, nama: String, role: String) {
+        this.uid = uid
+        this.nama = nama
+        this.role = role
+    }
+
+
+}

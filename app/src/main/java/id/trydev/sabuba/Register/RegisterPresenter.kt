@@ -21,6 +21,7 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
         mAuth.createUserWithEmailAndPassword(email, password).addOnSuccessListener {
             prefs.role = role
             prefs.token = it.user.uid
+            prefs.nama = nama
             val user = User(prefs.token, nama, role)
             info("role => ${prefs.role}, token => ${prefs.token}")
             // add data to firestore
@@ -30,7 +31,7 @@ class RegisterPresenter(val context:Context, val view:RegisterView):AnkoLogger {
                     .set(user)
                     .addOnSuccessListener {
                         view.hideRegisterLoading()
-                        view.showRegisterSuccess()
+                        view.showDokterMenu()
                     }
                     .addOnFailureListener{
                         view.hideRegisterLoading()

@@ -10,4 +10,5 @@ interface RegisterView {
     fun showRegisterFailed(msg:String)
     fun showSubmitDataSuccess()
     fun showSubmitDataFailed(msg:String)
+    fun showDokterMenu()
 }

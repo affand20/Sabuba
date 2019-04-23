@@ -5,6 +5,8 @@ import android.animation.AnimatorListenerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import id.trydev.sabuba.ChatDokter.ChatDokterActivity
+import id.trydev.sabuba.DokterMenu.DokterActivity
 import id.trydev.sabuba.Login.LoginActivity
 import id.trydev.sabuba.Menu.MenuActivity
 import id.trydev.sabuba.R
@@ -316,5 +318,10 @@ class RegisterActivity : AppCompatActivity(), RegisterView, AnkoLogger {
 
     override fun showSubmitDataFailed(msg:String) {
         toast(msg)
+    }
+
+    override fun showDokterMenu() {
+        startActivity<ChatDokterActivity>()
+        finish()
     }
 }

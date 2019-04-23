@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import id.trydev.sabuba.ChatDokter.ChatDokterActivity
 import id.trydev.sabuba.Menu.MenuActivity
 import id.trydev.sabuba.R
 import id.trydev.sabuba.Utils.AnimSupport
@@ -34,7 +35,7 @@ class DeteksiDiniActivity : AppCompatActivity(), DeteksiDiniView, AnkoLogger {
 
         presenter = DeteksiDiniPresenter(this,this)
 
-        lv_umur_balita.setOnItemClickListener { adapterView, view, position, l ->
+        lv_umur_balita.setOnItemClickListener { _, _, position, _ ->
             when (position){
                 0 -> {
                     presenter.setSoalKuesioner(R.array.kuesioner_3_bulan)
@@ -160,7 +161,7 @@ class DeteksiDiniActivity : AppCompatActivity(), DeteksiDiniView, AnkoLogger {
             emotion.text =  ":("
             btn_arahan_kuesioner.text = "Chat Dokter Sekarang"
             btn_arahan_kuesioner.onClick {
-                // goes to chat activity
+            startActivity<ChatDokterActivity>()
             }
         } else if (totalYa>=7 && totalYa<=8){
             arahan_hasil_kuesioner.text = "Berdasarkan jawaban kuesioner anda, anak anda perlu diperiksa ulang 1 minggu kemudian karena hasil meragukan."

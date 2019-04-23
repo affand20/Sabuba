@@ -26,8 +26,13 @@ class LoginPresenter(val context: Context, val view:LoginView):AnkoLogger{
                 .addOnSuccessListener {snapshot ->
                     val user = snapshot.toObject(User::class.java)
                     prefs.role = user?.role
+                    prefs.nama = user?.nama
                     view.hideLoading()
-                    view.showSuccessLogin()
+                    if (prefs.role=="dokter"){
+                        view.showDokterMenu()
+                    } else if (prefs.role == "ibu"){
+                        view.showSuccessLogin()
+                    }
                 }
                 .addOnFailureListener {
                     prefs.resetPreference()

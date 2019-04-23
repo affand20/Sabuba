@@ -9,7 +9,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import id.trydev.sabuba.Galeri.Model.GaleriImage
 import id.trydev.sabuba.R
-import id.trydev.sabuba.Utils.GlideApp
 import kotlinx.android.synthetic.main.activity_galeri.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.find
@@ -34,13 +33,21 @@ class GaleriAdapter(val listGaleri:List<GaleriImage>, val listener:(GaleriImage)
 
         fun bindItem(item:GaleriImage, listener: (GaleriImage) -> Unit){
             info("URL ${item.Url}")
-            GlideApp.with(view)
-                .asBitmap()
-                .centerCrop()
-                .thumbnail(0.25f)
+//            GlideApp.with(view)
+//                .asBitmap()
+//                .centerCrop()
+//                .thumbnail(0.25f)
+//                .load(item.Url)
+//                .placeholder(R.color.colorPrimary)
+//                .fallback(R.color.grey)
+//                .into(image)
+            Glide.with(view.context)
                 .load(item.Url)
-                .placeholder(R.color.colorPrimary)
+                .asBitmap()
+                .thumbnail(0.25f)
+                .placeholder(android.R.color.white)
                 .fallback(R.color.grey)
+                .centerCrop()
                 .into(image)
 
             itemView.onClick {
