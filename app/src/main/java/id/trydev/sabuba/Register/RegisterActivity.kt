@@ -2,6 +2,9 @@ package id.trydev.sabuba.Register
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,11 +16,16 @@ import id.trydev.sabuba.R
 import id.trydev.sabuba.Register.Model.DataBalita
 import id.trydev.sabuba.Utils.AnimSupport
 import kotlinx.android.synthetic.main.activity_register.*
+import me.adawoud.bottomsheettimepicker.BottomSheetTimeRangePicker
 import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.info
 import org.jetbrains.anko.sdk27.coroutines.onClick
+import org.jetbrains.anko.sdk27.coroutines.onFocusChange
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import java.time.Duration
+import java.util.*
+import kotlin.math.min
 
 class RegisterActivity : AppCompatActivity(), RegisterView, AnkoLogger {
 
@@ -95,12 +103,82 @@ class RegisterActivity : AppCompatActivity(), RegisterView, AnkoLogger {
                     penolong,
                     jenisPersalinan,
                     tempatPersalinan,
-                    berat_badan_lahir.text.toString()
+                    berat_badan_lahir.text.toString(),
+                    tgl_persalinan.text.toString(),
+                    waktu_kelahiran.text.toString()
                 )
 
                 presenter.saveDataBalita(dataBalita)
             }
         }
+
+        val calendar = Calendar.getInstance()
+        val listener = DatePickerDialog.OnDateSetListener { datePicker, year, month, date ->
+            calendar.set(Calendar.YEAR, year)
+            calendar.set(Calendar.MONTH, month)
+            calendar.set(Calendar.DAY_OF_MONTH, date)
+            tgl_persalinan.setText("${datePicker.dayOfMonth}/${datePicker.month+1}/${datePicker.year}")
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            tgl_persalinan.showSoftInputOnFocus = false
+        }
+        tgl_persalinan.onFocusChange { v, hasFocus ->
+            if (hasFocus){
+                val year = calendar.get(Calendar.YEAR)
+                val month = calendar.get(Calendar.MONTH)
+                val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+                DatePickerDialog(this@RegisterActivity, listener,year,month,day).show()
+            }
+        }
+        tgl_persalinan.onClick {
+
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+
+            DatePickerDialog(this@RegisterActivity, listener,year,month,day).show()
+        }
+
+        val calendar2 = Calendar.getInstance()
+        val listener2 = TimePickerDialog.OnTimeSetListener { timePicker, hour, minute ->
+            calendar.set(Calendar.HOUR_OF_DAY, hour)
+            calendar.set(Calendar.MINUTE, minute)
+            info("hour ${hour}, minute ${minute}")
+            var jam = ""
+            var menit = ""
+            if (hour.toString().length==1){
+                jam = "0${hour}"
+            }
+            if (minute.toString().length==1){
+                menit = "0${minute}"
+            }
+            waktu_kelahiran.setText("$jam:$menit")
+
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            waktu_kelahiran.showSoftInputOnFocus = false
+        }
+        waktu_kelahiran.onFocusChange { v, hasFocus ->
+            if (hasFocus){
+
+                val hour = calendar2.get(Calendar.HOUR_OF_DAY)
+                val minute = calendar2.get(Calendar.MINUTE)
+
+                TimePickerDialog(this@RegisterActivity,listener2,hour,minute,true).show()
+            }
+        }
+        waktu_kelahiran.onClick {
+
+            val hour = calendar2.get(Calendar.HOUR_OF_DAY)
+            val minute = calendar2.get(Calendar.MINUTE)
+
+            TimePickerDialog(this@RegisterActivity,listener2,hour,minute,true).show()
+        }
+
     }
 
     fun validateRegisterAkun():Boolean{
@@ -211,6 +289,17 @@ class RegisterActivity : AppCompatActivity(), RegisterView, AnkoLogger {
         if (berat_badan_lahir.text.toString().isEmpty()){
             berat_badan_lahir.requestFocus()
             berat_badan_lahir.setError("Wajib diisi")
+            return false
+        }
+        if (tgl_persalinan.text.toString().isEmpty()){
+            tgl_persalinan.requestFocus()
+            tgl_persalinan.setError("Wajib diisi")
+            return false
+        }
+        if (waktu_kelahiran.text.toString().isEmpty()){
+            waktu_kelahiran.requestFocus()
+            waktu_kelahiran.setError("Wajib diisi")
+            return false
         }
         return true
     }

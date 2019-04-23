@@ -115,7 +115,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:textAllCaps="false"
-                            android:text="Daftar Sebagai Dokter"
+                            android:text="Daftar Sbg Dokter"
                             app:cornerRadius="4dp" />
                 </LinearLayout>
 
@@ -414,6 +414,7 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <LinearLayout
+                        android:layout_weight="1"
                         android:layout_marginTop="8dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -422,7 +423,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="Umur Kehamilan">
+                            android:hint="Umur Hamil (Bln)">
 
                         <android.support.design.widget.TextInputEditText
                                 android:id="@+id/umur_kehamilan"
@@ -430,14 +431,18 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number" />
                     </android.support.design.widget.TextInputLayout>
-                    <TextView
-                            android:layout_gravity="center_vertical"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textColor="#000"
-                            android:text="Bulan"
-                            android:layout_weight="0.75"
+                    <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="BB Lahir (gram)">
+
+                        <android.support.design.widget.TextInputEditText
+                                android:id="@+id/berat_badan_lahir"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"/>
+                    </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
 
                 <TextView
@@ -525,8 +530,8 @@
                 </RadioGroup>
 
                 <LinearLayout
-                        android:layout_marginTop="8dp"
                         android:layout_weight="1"
+                        android:layout_marginTop="8dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -534,22 +539,28 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="Berat Badan Lahir">
+                            android:hint="Tgl Persalinan">
 
                         <android.support.design.widget.TextInputEditText
-                                android:id="@+id/berat_badan_lahir"
+                                android:id="@+id/tgl_persalinan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="number"/>
+                                android:maxLines="1"
+                                android:inputType="date" />
                     </android.support.design.widget.TextInputLayout>
-                    <TextView
-                            android:layout_gravity="center_vertical"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textColor="#000"
-                            android:text="Kg"
-                            android:layout_weight="0.75"
+                    <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Waktu Kelahiran">
+
+                        <android.support.design.widget.TextInputEditText
+                                android:id="@+id/waktu_kelahiran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:inputType="time"/>
+                    </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
 
                 <android.support.design.button.MaterialButton

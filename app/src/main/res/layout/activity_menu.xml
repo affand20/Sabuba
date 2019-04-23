@@ -46,10 +46,11 @@
                 <ImageButton
                         android:id="@+id/deteksi_dini"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/deteksi"
+                        android:scaleType="fitXY"
                         android:background="@android:color/transparent"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"/>
                 <TextView
                         android:layout_marginTop="8dp"
 
@@ -66,7 +67,7 @@
                 <ImageButton
                         android:id="@+id/galeri"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/ic_gallery"
                         android:background="@android:color/transparent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -86,7 +87,7 @@
                 <ImageButton
                         android:id="@+id/imunisasi"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/ic_injection"
                         android:background="@android:color/transparent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -106,7 +107,7 @@
                 <ImageButton
                         android:id="@+id/balita_sakit"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/ic_emoticons"
                         android:background="@android:color/transparent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -137,10 +138,11 @@
                 <ImageButton
                         android:id="@+id/chat_dokter"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/chat_dokter"
                         android:background="@android:color/transparent"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="48dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="48dp"/>
                 <TextView
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
@@ -156,10 +158,11 @@
                 <ImageButton
                         android:id="@+id/bantuan"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/help"
+                        android:scaleType="fitXY"
                         android:background="@android:color/transparent"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"/>
                 <TextView
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
@@ -175,10 +178,11 @@
                 <ImageButton
                         android:id="@+id/keluar"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/exit"
                         android:background="@android:color/transparent"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="48dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="48dp"/>
                 <TextView
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"

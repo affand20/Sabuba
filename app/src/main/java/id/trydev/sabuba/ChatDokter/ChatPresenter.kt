@@ -42,8 +42,12 @@ class ChatPresenter(val view:ChatView, val context: Context):AnkoLogger {
 
                     }
                 }
-                view.showListChat(listChat)
                 view.hideLoading()
+                if (listChat.size>0){
+                    view.showListChat(listChat)
+                } else{
+                    view.showEmptyChat()
+                }
             }
             override fun onCancelled(p0: DatabaseError) {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.

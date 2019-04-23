@@ -7,11 +7,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import id.trydev.sabuba.ChatDokter.Model.Chat
 import id.trydev.sabuba.R
+import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.find
+import org.jetbrains.anko.info
 
-class ChatDetailAdapter(val listChat:List<Chat>, val listViewType:List<Int>):RecyclerView.Adapter<ChatDetailAdapter.ViewHolder>() {
+class ChatDetailAdapter(val listChat:List<Chat>, val listViewType:List<Int>):RecyclerView.Adapter<ChatDetailAdapter.ViewHolder>(), AnkoLogger {
 
     override fun getItemViewType(position: Int): Int {
+        info("position ${position}, item ${listViewType[position]}")
         return listViewType[position]
     }
 

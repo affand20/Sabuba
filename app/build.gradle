@@ -13,6 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -48,6 +49,7 @@ dependencies {
     implementation 'pub.devrel:easypermissions:2.0.1'
     implementation 'com.github.matrixxun:MaterialBadgeTextView:c5a27e8243'
     implementation 'com.google.firebase:firebase-database:16.1.0'
-
+    implementation 'com.github.adawoud:BottomSheetTimeRangePicker:1.11'
+    implementation 'com.android.support:multidex:1.0.3'
 
 }

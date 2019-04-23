@@ -14,6 +14,7 @@ import id.trydev.sabuba.BalitaSakit.BalitaSakitActivity
 import id.trydev.sabuba.ChatDokter.ChatDokterActivity
 import id.trydev.sabuba.DeteksiDini.DeteksiDiniActivity
 import id.trydev.sabuba.Galeri.GaleriActivity
+import id.trydev.sabuba.Imunisasi.ImunisasiActivity
 import id.trydev.sabuba.Login.LoginActivity
 import id.trydev.sabuba.Menu.ArtikelTips.Adapter.ArtikelTipsAdapter
 import id.trydev.sabuba.Menu.ArtikelTips.ArtikelTipsPresenter
@@ -75,6 +76,18 @@ class MenuActivity : AppCompatActivity(), ArtikelTipsView, AnkoLogger {
 
         chat_dokter.onClick {
             startActivity<ChatDokterActivity>()
+        }
+
+        imunisasi.onClick {
+            startActivity<ImunisasiActivity>()
+        }
+
+        bantuan.onClick {
+            val uri = Uri.parse("https://sites.google.com/view/pusat-bantuan-aplikasi-sabuba/beranda")
+            val intentBuilder = CustomTabsIntent.Builder()
+            intentBuilder.build()
+                .launchUrl(this@MenuActivity, uri)
+            intentBuilder.setCloseButtonIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_close_black_24dp))
         }
     }
 

@@ -10,11 +10,13 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_launcher_new"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@mipmap/ic_launcher_new"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Imunisasi.ImunisasiActivity">
+        </activity>
         <activity android:name=".ChatDokter.NewChat.NewChatDokterActivity">
         </activity>
         <activity android:name=".ChatDokter.ChatDetail.ChatDetailActivity">

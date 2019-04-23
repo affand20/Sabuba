@@ -10,10 +10,12 @@ import id.trydev.sabuba.ChatDokter.Model.Chat
 import id.trydev.sabuba.R
 import id.trydev.sabuba.Utils.AppPreferences
 import kotlinx.android.synthetic.main.activity_chat_detail.*
+import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.info
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.toast
 
-class ChatDetailActivity : AppCompatActivity(), ChatDetailView {
+class ChatDetailActivity : AppCompatActivity(), ChatDetailView, AnkoLogger {
 
     val listChat:MutableList<Chat> = mutableListOf()
     val listViewType:MutableList<Int> = mutableListOf()
@@ -70,10 +72,12 @@ class ChatDetailActivity : AppCompatActivity(), ChatDetailView {
         listChat.clear()
         listChat.addAll(chats)
         listChat.forEach {
+            info("MASUK -> id pengirim ${it.pengirim} == prefs.token ${prefs.token}")
+            info(it.pengirim==prefs.token)
             if (it.pengirim==prefs.token){
                 listViewType.add(0)     // chatnya sendiri
             } else{
-                listViewType.add(1)     // chhatnya orang lain
+                listViewType.add(1)     // chatnya orang lain
             }
         }
         adapter.notifyDataSetChanged()
